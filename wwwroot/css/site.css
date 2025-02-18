@@ -1,0 +1,1095 @@
+html {
+  font-size: 14px;
+}
+
+.navbar {
+    position: relative;
+    background-color: black !important;
+    z-index: 1000; /* To ensure it's above other content */
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navbar-brand {
+    color: white !important;
+    margin-right: 0px;
+    padding-left: 16px;
+    padding-right: 8px;
+    font-size: 12px;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 12px;
+}
+
+.border-bottom {
+   border-bottom: none !important;
+}
+
+footer {
+    position: relative;
+    background-color: #2b2b2b;
+    color: white;
+    z-index: 1000; /* To ensure it's above other content */
+    line-height: 25px !important;
+}
+
+.border-top {
+    border-top: none !important;
+}
+
+.text-muted {
+    color: white !important;
+    font-size: 12px;
+}
+
+#footer-grid-container {
+    height: 30px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#copyright-info {
+    color: white;
+    text-decoration: none; /* Remove underline */
+}
+
+#social-icons {
+    color: white;
+}
+
+.row {
+    --bs-gutter-x: 0rem;
+}
+
+@media (min-width: 768px) {
+    html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+}
+
+body {
+  
+}
+
+.pb-3 {
+    padding-bottom: 0px !important; 
+}
+
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right:0px;
+}
+
+.container-1 {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-image: url(/images/background/bg2.jpg);
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+video {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.overlay-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 374px;
+    background-color: rgba(1, 1, 1, 0.4); /* Semi-transparent background color */
+}
+
+
+.overlay {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#heading-1 {
+    font-family: 'Anton', sans- serif;
+    background-image: linear-gradient(to right, brown, brown, yellow, white, yellow, brown, brown);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: brown;
+    padding: 9vw 2vw 0vw 2vw;
+    text-align: center;
+    font-size: 8vw;
+}
+
+#p-1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    color: white;
+    padding: 0 150px 0 150px;
+}
+
+#GenAI-Tools-Block .col-md-6 {
+    margin-top: 30px; /* Adjust the top margin as needed */
+    border: 0px solid white; /* You can adjust the color and thickness */
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#GenAI-Tools-Block .col-md-3 {
+    margin-top: 30px; /* Adjust the top margin as needed */
+    border: 0px solid white; /* You can adjust the color and thickness */
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#GenAI-Organisations-Block .col-md-6 {
+    border: 0px solid white; /* You can adjust the color and thickness */
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#GenAI-Organisations-Block .col-md-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#GenAI-Applications-Block .col-md-6 {
+    border: 0px solid white; /* You can adjust the color and thickness */
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#GenAI-Applications-Block .col-md-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#GenAI-Jobs-Block .col-md-6 {
+    border: 0px solid white; /* You can adjust the color and thickness */
+    flex: 1;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#GenAI-Jobs-Block .col-md-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#img-1 {
+    display: block; /* Ensure the image is a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+    border: 1px solid gray;
+}
+
+#img-2 {
+    border: 1px solid gray;
+}
+
+#block-heading {
+    font-family: 'Anton', sans- serif;
+    color: orange;
+    text-shadow: 2px 2px blue;
+    font-size: 30px;
+}
+
+.grid-container {
+    margin-left: 100px; /* Adjust the left margin as needed */
+    margin-right: 100px; /* Adjust the right margin as needed */
+    overflow: auto;
+}
+
+.yellow-line {
+    border: 1px solid yellow;
+    margin: 20px 10px 20px 10px;
+    opacity: 0.7;
+}
+
+#block-paragraph {
+    font-size: 10px;
+}
+
+.light-blue {
+    color: lightblue;
+}
+
+.grey {
+    color: grey;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-color: grey;
+}
+
+#List-Block .col-md-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#List-Block p {
+    font-size: 13px;
+}
+
+#genai-container-1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/background/bg5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(360deg);
+}
+
+#genai-container-2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/background/bg6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#genai-container-3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/background/bg7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Tools-grid {
+    min-height: 600px;
+}
+
+#Tools-grid .col-md-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(98, 95, 97, 0.7); /* Gray overlay with 0.5 opacity */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.img-container:hover .img-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.img-title {
+    color: white;
+    margin-bottom: 2px;
+    font-size: 12px;
+}
+
+.yellow-line-1 {
+    width: 120px;
+    height: 2px;
+    background-color: yellow;
+    margin-bottom: 1px;
+}
+
+.details-button {
+    background-color: #2678b7; /* Adjust the color as needed */
+    border-radius: 2px; /* Rounded corners by 2px */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.gray-line {
+    width: 120px;
+    height: 2px;
+    background-color: gray;
+    opacity: 0.7;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.details-div {
+    display: none;
+    padding: 10px;
+    background-color: #242424;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 638px;
+    margin-left: 15px;
+}
+
+.details-div img {
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+}
+
+.heading-2 {
+    color: yellow;
+    font-size: 18px;
+    text-shadow: 1px 1px blue;
+    margin-bottom: 2px;
+}
+
+.yellow-line-2 {
+    width: 300px;
+    height: 2px;
+    background-color: yellow;
+    margin-bottom: 2px;
+}
+
+.details-button-1 {
+    background-color: #2678b7; /* Adjust the color as needed */
+    border-radius: 2px; /* Rounded corners by 2px */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 8px;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+}
+
+#details-div-paragraph {
+    color: grey;
+    font-size: 10px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.website-button {
+    background-color: #383838; /* Adjust the color as needed */
+    border-radius: 2px; /* Rounded corners by 2px */
+    color: lightgray;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 8px;
+    text-decoration: underline;
+}
+
+#detail-div-img-div {
+    background-color: #404040;
+    margin-top: 10px;
+    padding: 5px 0px 5px 0px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#detail-div-img {
+    border: 1px solid gray;
+    margin-left: 20px;
+    width: 150px;
+}
+
+.close-button {
+    position: absolute;
+    top: 322px; /* Adjust top position as needed */
+    right: -307px; /* Adjust right position as needed */
+    background-color: transparent;
+    color: grey;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.genai-link {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 1px 1px 1px 1px;
+}
+
+.close-button-1 {
+    position: absolute;
+    top: 1104px; /* Adjust top position as needed */
+    right: -307px; /* Adjust right position as needed */
+    background-color: transparent;
+    color: grey;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.close-button-2 {
+    position: absolute;
+    top: 1854px; /* Adjust top position as needed */
+    right: -307px; /* Adjust right position as needed */
+    background-color: transparent;
+    color: grey;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.Jobs-Container {
+    position: relative;
+    width: 100%;
+    min-height: 1300px;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#background-image-1 {
+    background-image: url(/images/background/bg1.jpg);
+}
+
+#background-image-2 {
+    background-image: url(/images/background/bg3.jpg);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 80px;
+}
+
+.content-2 {
+    margin: 130px 20px 0px 20px;
+}
+
+.content-2 .col-md-4 {
+    border: 1px solid grey;
+    background-color: rgba(0, 0, 255, 0.3);
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+.content-2 .col-md-8 {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+#cont-5 {
+    padding-left: 20px;
+}
+
+#cont-6 {
+    padding-right: 20px;
+}
+
+#block-heading-1 {
+    font-family: 'Anton', sans- serif;
+    color: orange;
+    text-shadow: 2px 2px blue;
+    font-size: 40px;
+}
+
+.job-paragraph {
+    font-size: 20px;
+}
+
+.yellow-line-3 {
+    width: 707px;
+    margin-left: 10px;
+    border: 1px solid yellow;
+    opacity: 0.9 !important;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th {
+    background-color: navy;
+    color: yellow;
+    text-align: center;
+}
+
+tr {
+    background-color: white;
+    color: navy;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table-container {
+    max-height: 300px; /* Adjust the maximum height as needed */
+    overflow: auto;
+    white-space: nowrap; /* Prevent table content from wrapping */
+}
+
+.table {
+    width: 100%; /* Ensure the table takes up the full width of the container */
+}
+
+.graph-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#heading-3 {
+    font-family: 'Anton', sans- serif;
+    background-image: linear-gradient(to right, brown, brown, yellow, white, yellow, brown, brown);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 9vw 2vw 0vw 2vw;
+    text-align: center;
+    font-size: 8vw;
+}
+
+.yellow-line-4 {
+    width: 200px;
+    margin: 0px 0px 0px 10px;
+    border: 1px solid yellow;
+    opacity: 0.9 !important;
+}
+
+#contact-heading {
+    font-family: 'Dancing Script', cursive;
+    color: yellow;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+#contact-paragraph {
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#background-image-4 {
+    background-image: url(/images/background/bg1.jpg);
+    z-index: -100;
+}
+
+#col-wrapper {
+    background-color: rgba(0, 0, 255, 0.3);
+    border: 1px solid white;
+    margin: 5px;
+    flex: 1;
+    box-shadow: 5px 5px yellow;
+    min-height: 400px;
+}
+
+#grid-container-7 {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 100px;
+}
+
+#log-in-container {
+    background-color: #363636;
+}
+
+#login-h1 {
+    color: white;
+    font-size: 30px;
+}
+
+#login-h2 {
+    color: white;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-top: 20px
+}
+
+#login-div-1 {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+#yellow-line-5 {
+    width: 245px;
+    border: 1px solid yellow;
+    opacity: 0.9 !important;
+    margin: 0 0 0 10px;
+}
+
+.form-floating {
+    margin-left: 10px;
+    padding-bottom: 20px;
+    color: lightgray;
+}
+
+.checkbox {
+    margin-left: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+#login-btn {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.login-text {
+    text-decoration:none;
+    color: grey;
+    font-size: 14px;
+}
+
+#login-col-2 {
+    margin-left: 10px;
+}
+
+#login-h3 {
+    color: yellow;
+    text-shadow: 2px 2px blue;
+}
+
+#yellow-line-6 {
+    width: 360px;
+    border: 1px solid yellow;
+    opacity: 0.9 !important;
+    margin: 0;
+}
+
+#login-text-2 {
+    color: white;
+}
+
+#login-a {
+    color: grey;
+}
+
+#login-links {
+    color: grey;
+}
+
+#create-container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-image: url(/images/background/bg2.jpg);
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#form-container {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#back-link {
+    color: grey;
+}
+
+#create-heading {
+    font-family: 'Anton', sans- serif;
+    color: orange;
+    text-shadow: 2px 2px blue;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+#yellow-line-7 {
+    width: 100%;
+    border: 1px solid yellow;
+    opacity: 0.9 !important;
+    margin: 30px 0 10px 0;
+}
+
+#form-container .form-control{
+    width: 570px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    color: white;
+}
+
+#create-btn {
+    margin-bottom: 30px;
+}
+
+#web-container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card {
+    margin: 10px;
+    background: linear-gradient(to right, grey, white, grey);
+    transition: background 0.2s ease;
+    position: relative; /* Added this to establish a positioning context */
+}
+
+.card:hover {
+    background-color: transparent; /* Change the background color to transparent on hover */
+}
+
+.card-img-top {
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.card:hover .card-img-top {
+    opacity: 1;
+}
+
+.card-title {
+    color: blue;
+    text-align: center; /* Center-align the title */
+    position: absolute; /* Position the title absolutely within the card */
+    top: 50%; /* Align the title vertically in the middle */
+    left: 50%; /* Align the title horizontally in the middle */
+    transform: translate(-50%, -300%); /* Center the title both horizontally and vertically */
+    text-shadow: 1px 1px white, 3px 3px lightgrey;
+    transition: color 0.2s ease;
+    font-size: 20px;
+}
+
+.card-body {
+    padding: 0px;
+}
+
+.card:hover .card-title {
+    color: transparent; /* Make the title transparent on hover */
+    text-shadow: none;
+}
+
+.websites-container {
+    background-size: 100%; /* Cover the entire container */
+    background-attachment: fixed; /* Fixed background, doesn't scroll with content */
+    background-repeat: no-repeat;
+    background-image: url(/images/background/bg1.jpg)
+}
+
+#web-p {
+    color: grey;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.orange-bg {
+    background: linear-gradient(orange, white, white);
+    height: 100%;
+}
+
+.blue-bg {
+    background: linear-gradient(blue, white, white);
+    height: 100%;
+}
+
+.web-img {
+    width: 100%
+}
+
+.web-title {
+    color: darkblue;
+    text-align: center; 
+    text-shadow: 1px 1px lightgrey, 3px 3px grey;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.website-p {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+#like-btn {
+    margin-left: 20px;
+}
+
+#delete-container {
+    background-size: 100%; /* Cover the entire container */
+    background-attachment: fixed; /* Fixed background, doesn't scroll with content */
+    background-repeat: no-repeat;
+    background-image: url(/images/background/bg2.jpg);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#delete-heading {
+    color: yellow;
+    text-shadow: 1px 1px blue;
+    font-size: 30px;
+}
+
+.delete-label {
+    color: white;
+}
+
+#delete-heading-2 {
+    font-family: 'Anton', sans- serif;
+    color: orange;
+    text-shadow: 2px 2px blue;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
+}
+
+
+#yellow-line-8 {
+    width: 100%;
+    border: 1px solid yellow;
+    opacity: 0.9 !important;
+    margin: 0px 0 00px 0;
+}
+
+#line {
+    color: white;
+}
+
+#like-btn {
+    margin-left: 20px;
+}
+
+
+/* Media queries */
+@media (min-width: 1800px) {
+    video {
+            height: 700px;
+        }
+
+        #GenAI-Tools-Block .col-md-4 {
+            margin-top: 130px;
+        }
+
+        #p-1 {
+            font-size: 1.5vw;
+            padding: 0 400px 0 400px;
+        }
+    }
+
+    @media (min-width: 1600px) and (max-width: 1800px) {
+        video {
+            height: 550px;
+        }
+
+        #GenAI-Tools-Block .col-md-4 {
+            margin-top: 70px;
+        }
+
+        #p-1 {
+            font-size: 1.5vw;
+            padding: 0 400px 0 400px;
+        }
+    }
+
+    @media (min-width: 1400px) and (max-width: 1600px) {
+        video {
+            height: 460px;
+        }
+
+        #GenAI-Tools-Block .col-md-4 {
+            margin-top: 70px;
+        }
+
+        #p-1 {
+            font-size: 1.5vw;
+        }
+    }
+    /* Very large laptop and desktop screens*/
+    @media (min-width: 1200px) and (max-width: 1400px) {
+        video {
+            height: 440px;
+        }
+
+        #GenAI-Tools-Block .col-md-4 {
+            margin-top: 100px;
+        }
+
+        #p-1 {
+            font-size: 1.5vw;
+        }
+    }
+    /*Large laptop/desktop screens*/
+    @media (min-width: 992px) and (max-width: 1200px) {
+        video {
+            height: 400px;
+        }
+
+        #GenAI-Tools-Block .col-md-4 {
+            margin-top: 60px;
+        }
+
+        .overlay-1 {
+            height: 437px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            transform: translate(-50%, -140%); /* Center the title both horizontally and vertically */
+        }
+
+        .overlay {
+            min-height: 1430px;
+        }
+    }
+    /*Standard laptop/desktop screens*/
+    @media (min-width: 768px) and (max-width: 992px) {
+        video {
+            height: 370px;
+        }
+
+        #GenAI-Tools-Block .col-md-4 {
+            margin-top: 80px;
+        }
+
+        .card-title {
+            font-size: 16px;
+            transform: translate(-50%, -130%); /* Center the title both horizontally and vertically */
+        }
+
+        .overlay {
+            min-height: 1200px;
+        }
+    }
+    /*Tablet screens*/
+    @media (min-width: 576px) and (max-width: 768px) {
+        video {
+            height: 340px;
+        }
+
+        #GenAI-Tools-Block .col-md-4 {
+            margin-top: 50px;
+        }
+
+        #p-1 {
+            padding: 0 120px 0 120px;
+            font-size: 2.3vw;
+        }
+
+        .grid-container {
+            margin-left: 50px; /* Adjust the left margin as needed */
+            margin-right: 50px; /* Adjust the right margin as needed */
+        }
+    }
+    /*Mobile phone screens*/
+    @media (max-width: 576px) {
+        video {
+            height: 200px;
+        }
+
+        #GenAI-Tools-Block .col-md-4 {
+            margin-top: 30px;
+        }
+
+        #p-1 {
+            padding: 0 70px 0 70px;
+            font-size: 2.5vw;
+        }
+
+        .overlay-1 {
+            height: 235px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            transform: translate(-50%, -100%); /* Center the title both horizontally and vertically */
+        }
+
+        .overlay {
+            min-height: 2270px;
+        }
+
+        .grid-container {
+            margin-left: 20px;
+            margin-right: 20px;
+            max-height: 400px
+        }
+
+        .col-sm-6 {
+            margin-top: 5px;
+            width: 180px
+        }
+
+        .img-fluid {
+            margin-bottom: 10px;
+        }
+
+        .col-sm-4 {
+            width: 128px;
+        }
+    }
+
+.mb-1 {
+    margin-bottom: 0 !important;
+}
+
+.mb-2 {
+    margin-bottom: 0 !important;
+}
+
+.mb-3 {
+    margin-bottom: 0 !important;
+}
+
+.mb-4 {
+    margin-bottom: 0 !important;
+}
+
+.mb-5 {
+    margin-bottom: 0 !important;
+}
+
+.mb-6 {
+    margin-bottom: 0 !important;
+}

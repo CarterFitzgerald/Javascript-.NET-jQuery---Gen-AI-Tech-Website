@@ -1,0 +1,58 @@
+﻿@model Final_Assignment_Carter_Fitzgerald.Models.GenAIs
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Message"]
+    </div>
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["Error"]
+    </div>
+}
+
+<div id="create-container">
+    <h1 id="create-heading">Add new GenAI Website</h1>
+    <div id="form-container">
+        <hr id="yellow-line-7">
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Create" method="post" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="GenAIName" class="control-label"></label>
+                        <input asp-for="GenAIName" class="form-control" />
+                        <span asp-validation-for="GenAIName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Summary" class="control-label"></label>
+                        <textarea asp-for="Summary" rows="5" class="form-control"></textarea>
+                        <span asp-validation-for="Summary" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ImgFile" class="control-label"></label>
+                        <input asp-for="ImgFile" type="file" class="form-control" />
+                        <span asp-validation-for="ImgFile" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input id="create-btn" type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a id="back-link" asp-action="Index">Back to GenAI Websites</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

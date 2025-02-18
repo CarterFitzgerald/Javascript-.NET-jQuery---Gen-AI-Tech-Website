@@ -1,0 +1,154 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container-1">
+  <div class="video-container">
+        <video loop muted autoplay preload="auto">
+            <source src="/videos/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay-1">
+        <h1 id="heading-1">Generative AI Technology</h1>
+        <p id="p-1">Any time an AI technology is generating something on its own, it can be referred to as
+            "generative AI." This umbrella term includes learning algorithms that make predictions
+            as well as those that can use prompts to autonomously write articles and paint pictures.<br>
+            <i>Techopedia</i>
+        </p>
+    </div>
+   </div>
+  <div class="overlay">
+      <div class="grid-container" id="grid-container-1">
+          <div id="GenAI-Tools-Block" class="container-fluid">
+              <div class="row" style="margin:10px;">
+                <div class="col-md-6 col-sm-12">
+                    <h2 id="block-heading">GenAI Tools</h2>
+                    <p id="block-paragraph">Generative AI tools refer to software or systems that use neural network techniques to
+                        process and comprehend input data, subsequently producing meaningful responses.<br>
+                        <i>Scribehow</i>
+                        <a class="genai-link" href="/Home/GenAI#genai-container-1">Read more</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img id="img-1" src="/images/genaisites/bard.jpg" alt="Google Bard Logo" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img id="img-2" src="/images/genaisites/midjourney.jpg" alt="Midjourney Logo" class="img-fluid">
+                </div>
+              </div>
+          </div>
+          <hr class="yellow-line">
+      </div>
+      <div class="grid-container" id="grid-container-2">
+          <div id="GenAI-Organisations-Block" class="container-fluid">
+              <div class="row" style="margin:10px;">
+                <div class="col-md-3 col-sm-6">
+                    <img id="img-2" src="/images/genaisites/microsoft.jpg" alt="Microsoft Logo" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img id="img-1" src="/images/genaisites/google.jpg" alt="Google Logo" class="img-fluid">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h2 id="block-heading">GenAI Organisations</h2>
+                    <p id="block-paragraph">Generative AI Organizations like Microsoft, Google, Amazon and IBM have invested
+                        hundreds of millions of dollars and massive compute power to build the foundational
+                        models on which services like ChatGPT and others depend.<br>
+                        <i>Gartner</i>
+                        <a class="genai-link" href="/Home/GenAI#genai-container-2">Read more</a>
+                    </p>
+                </div>
+              </div>
+          </div>
+          <hr class="yellow-line">
+      </div>
+      <div class="grid-container" id="grid-container-3">
+          <div id="GenAI-Applications-Block" class="container-fluid">
+              <div class="row" style="margin:10px;">
+                <div class="col-md-6 col-sm-12">
+                    <h2 id="block-heading">GenAI Applications</h2>
+                    <p id="block-paragraph"><span class="light-blue">Text:</span> GPT-3, LaMDA, LLaMA, BLOOM and GPT-4.<br>
+                            <span class="light-blue">Code:</span> OpenAI Codex.<br>
+                            <span class="light-blue">Images:</span> DALL-E, Midjourney and Stable Diffusion.<br>
+                            <span class="light-blue">Video:</span> Make-A-Video (Meta Platforms).<br>
+                        <i>Wikipedia</i>
+                        <a class="genai-link" href="/Home/GenAI#genai-container-3">Read more</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img id="img-1" src="/images/genaisites/chatgpt.jpg" alt="ChatGPT Logo" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img id="img-2" src="/images/genaisites/dalle.jpg" alt="Dall-E 2 Logo" class="img-fluid">
+                </div>
+              </div>
+          </div>
+          <hr class="yellow-line">
+      </div>
+      <div class="grid-container" id="grid-container-4">
+          <div id="GenAI-Jobs-Block" class="container-fluid">
+              <div class="row" style="margin:10px;">
+                <div class="col-md-3 col-sm-6">
+                    <img id="img-2" src="/images/genaisites/pie.jpg" alt="Pie chart for jobs and talents in AI, ML, Data Science and Big Data" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img id="img-1" src="/images/genaisites/job.jpg" alt="Robot sitting on bench working" class="img-fluid">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h2 id="block-heading">AI Jobs</h2>
+                    <p id="block-paragraph">The prime source for jobs and talents in AI, ML, Data Science and Big Data: 
+                        <u>
+                            <a href="https://ai-jobs.net/"><span class="grey">Insights AI-Jobs</span></a>
+                        </u><br>
+                        Python source for tables and charts: 
+                        <u>
+                            <a href="https://www.kaggle.com/code/sowrabhghosh/data-science-salary-2020-22-analysis"><span class="grey">Kaggle.</span></a>
+                        </u><br>
+                        <a src="">Read more</a>
+                    </p>
+                </div>
+              </div>
+          </div>
+          <hr class="yellow-line">
+      </div>
+      <div>
+          <div id="List-Block" class="container-fluid">
+              <div class="row" style="margin:10px;">
+                <div class="col-md-12 col-sm-12">
+                    <h2 id="block-heading">List of Generative AI Websites</h2>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <p><u><a id="login-links" href="@Url.Action("Create", "GenAIs")">Click here to add a new generative AI website.</a></u></p>
+                    }
+                    else
+                    {
+                        <p><i>Please 
+                        <span class="grey"><u><a id="login-links" href="/Identity/Account/Login">login</a></u></span>
+                        or
+                        <span class="grey"><u><a id="login-links" href="/Identity/Account/Register">register</a></u></span>
+                        to add a new generative AI website.
+                        </i>
+                    </p>
+                    }
+                </div>
+              </div>
+          </div>
+      </div>
+      <div id="web-container">
+          <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-2 col-sm-4">
+                    <div class="card">
+                        <a href="@item.AnchorLink">
+                            <div class="card-body">
+                                <img src="~/images/@(item.ImageFileName).jpg" class="card-img-top" alt="GenAI Image">
+                                <h5 class="card-title">@item.GenAIName</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            }
+          </div>
+      </div>
+  </div>
+</div>

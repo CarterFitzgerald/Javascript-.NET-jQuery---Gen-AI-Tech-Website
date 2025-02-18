@@ -1,0 +1,428 @@
+﻿@{
+	ViewData["Title"] = "GenAI";
+}
+
+<div class="genai-container" id="genai-container-1">
+	<h1 id="heading-1">GenAI Tools</h1>
+	<div class="grid-container" id="Tools-grid">
+          <div class="container-fluid">
+              <div class="row" style="margin:10px;">
+                <div class="col-md-3 col-sm-3">
+                    <div class="img-container">
+                        <img id="img-3" src="/images/genai/chatgpt_thumbnail.jpg" alt="ChatGPT Logo" class="img-fluid">
+                        <div class="img-overlay">
+                            <div class="img-title">CHATGPT</div>
+                            <div class="yellow-line-1"></div>
+                            <button class="details-button" onclick="toggleDetails('details-div-1')">MORE DETAILS</button>
+                            <div class="gray-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="img-container">
+                        <img id="img-4" src="/images/genai/bard_thumbnail.jpg" alt="Google Bard Logo" class="img-fluid">
+                        <div class="img-overlay">
+                            <div class="img-title">GOOGLE BARD</div>
+                            <div class="yellow-line-1"></div>
+                            <button class="details-button" onclick="toggleDetails('details-div-2')">MORE DETAILS</button>
+                            <div class="gray-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="img-container">
+                        <img id="img-5" src="/images/genai/midjourney_thumbnail.jpg" alt="Midjourney Logo" class="img-fluid">
+                        <div class="img-overlay">
+                            <div class="img-title">MIDJOURNEY</div>
+                            <div class="yellow-line-1"></div>
+                            <button class="details-button" onclick="toggleDetails('details-div-3')">MORE DETAILS</button>
+                            <div class="gray-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="img-container">
+                        <img id="img-6" src="/images/genai/dalle_thumbnail.jpg" alt="Dalle Logo" class="img-fluid">
+                        <div class="img-overlay">
+                            <div class="img-title">DALL-E</div>
+                            <div class="yellow-line-1"></div>
+                            <button class="details-button" onclick="toggleDetails('details-div-4')">MORE DETAILS</button>
+                            <div class="gray-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="details-div-1" class="details-div">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="/images/genai/chatgpt_large.jpg" alt="Wikipedia details on ChatGPT" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="heading-2">CHATGPT</h2>
+                        <div class="yellow-line-2"></div>
+                        <a href="#" class="details-button-1">More Details</a>
+                        <p id="details-div-paragraph">ChatGPT is a large language model-based chatbot developed by OpenAI and launched on
+                            November 30, 2022, notable for enabling users to refine and steer a conversation towards
+                            a desired length, format, style, level of detail, and language used. (Wikipedia)</p>
+                        <a href="#" class="website-button">Visit Website</a>
+                        <div id="detail-div-img-div">
+                            <img id="detail-div-img" src="/images/genai/chatgpt_thumbnail.jpg" alt="ChatGPT Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <button class="close-button" onclick="closeDetails('details-div-1')">X</button>
+                </div>
+            </div>
+        </div>
+        <div id="details-div-2" class="details-div">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="/images/genai/bard_large.jpg" alt="Wikipedia details on Google Bard" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="heading-2">GOOGLE BARD</h2>
+                        <div class="yellow-line-2"></div>
+                        <a href="#" class="details-button-1">More Details</a>
+                        <p id="details-div-paragraph">Bard is a conversational generative artificial intelligence chatbot developed by Google,
+                            based initially on the LaMDA family of large language models and later the PaLM LLM.
+                            (Wikipedia)</p>
+                        <a href="#" class="website-button">Visit Website</a>
+                        <div id="detail-div-img-div">
+                            <img id="detail-div-img" src="/images/genai/bard_thumbnail.jpg" alt="Bard Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <button class="close-button" onclick="closeDetails('details-div-2')">X</button>
+                </div>
+            </div>
+        </div>
+        <div id="details-div-3" class="details-div">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="/images/genai/midjourney_large.jpg" alt="Wikipedia details on Midjourney" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="heading-2">MIDJOURNEY</h2>
+                        <div class="yellow-line-2"></div>
+                        <a href="#" class="details-button-1">More Details</a>
+                        <p id="details-div-paragraph">Midjourney is a generative artificial intelligence program and service created and
+                            hosted by San Francisco-based independent research lab Midjourney, Inc. (Wikipedia)</p>
+                        <a href="#" class="website-button">Visit Website</a>
+                        <div id="detail-div-img-div">
+                            <img id="detail-div-img" src="/images/genai/midjourney_thumbnail.jpg" alt="Midjourney Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <button class="close-button" onclick="closeDetails('details-div-3')">X</button>
+                </div>
+            </div>
+        </div>
+        <div id="details-div-4" class="details-div">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="/images/genai/dalle_large.jpg" alt="Wikipedia details on Dall-e" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="heading-2">DALL-E</h2>
+                        <div class="yellow-line-2"></div>
+                        <a href="#" class="details-button-1">More Details</a>
+                        <p id="details-div-paragraph">DALL-E and DALL-E 2 are text-to-image models developed by OpenAI using deep learning
+                            methodologies to generate digital images from natural language descriptions, called
+                            prompts (Wikipedia)</p>
+                        <a href="#" class="website-button">Visit Website</a>
+                        <div id="detail-div-img-div">
+                            <img id="detail-div-img" src="/images/genai/dalle_thumbnail.jpg" alt="Dalle Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <button class="close-button" onclick="closeDetails('details-div-4')">X</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="genai-container" id="genai-container-2">
+	<h1 id="heading-1">GenAI Orgainsations</h1>
+	<div class="grid-container" id="Tools-grid">
+          <div class="container-fluid">
+              <div class="row" style="margin:10px;">
+                <div class="col-md-3 col-sm-3">
+                    <div class="img-container">
+                        <img id="img-3" src="/images/genai/ms_thumbnail.jpg" alt="Microsoft Logo" class="img-fluid">
+                        <div class="img-overlay">
+                            <div class="img-title">MICROSOFT</div>
+                            <div class="yellow-line-1"></div>
+                            <button class="details-button" onclick="toggleDetails('details-div-5')">MORE DETAILS</button>
+                            <div class="gray-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="img-container">
+                        <img id="img-4" src="/images/genai/google_thumbnail.jpg" alt="Google Logo" class="img-fluid">
+                        <div class="img-overlay">
+                            <div class="img-title">GOOGLE</div>
+                            <div class="yellow-line-1"></div>
+                            <button class="details-button" onclick="toggleDetails('details-div-6')">MORE DETAILS</button>
+                            <div class="gray-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="img-container">
+                        <img id="img-5" src="/images/genai/ibm_thumbnail.jpg" alt="IBM Logo" class="img-fluid">
+                        <div class="img-overlay">
+                            <div class="img-title">IBM</div>
+                            <div class="yellow-line-1"></div>
+                            <button class="details-button" onclick="toggleDetails('details-div-7')">MORE DETAILS</button>
+                            <div class="gray-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="img-container">
+                        <img id="img-6" src="/images/genai/amazon_thumbnail.jpg" alt="Amazon Logo" class="img-fluid">
+                        <div class="img-overlay">
+                            <div class="img-title">AMAZON</div>
+                            <div class="yellow-line-1"></div>
+                            <button class="details-button" onclick="toggleDetails('details-div-8')">MORE DETAILS</button>
+                            <div class="gray-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="details-div-5" class="details-div">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="/images/genai/ms_large.jpg" alt="Wikipedia details on Microsoft" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="heading-2">MICROSOFT</h2>
+                        <div class="yellow-line-2"></div>
+                        <a href="#" class="details-button-1">More Details</a>
+                        <p id="details-div-paragraph">Microsoft Corporation is an American multinational technology corporation headquartered
+                            in Redmond, Washington. Microsofts best-known software products are the Windows line of
+                            operating systems, the Microsoft 365 suite of productivity applications, and the
+                            Internet Explorer and Edge web browsers. (Wikipedia)</p>
+                        <a href="#" class="website-button">Visit Website</a>
+                        <div id="detail-div-img-div">
+                            <img id="detail-div-img" src="/images/genai/ms_thumbnail.jpg" alt="Microsoft Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <button class="close-button-1" onclick="closeDetails('details-div-5')">X</button>
+                </div>
+            </div>
+        </div>
+        <div id="details-div-6" class="details-div">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="/images/genai/google_large.jpg" alt="Wikipedia details on Google" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="heading-2">GOOGLE</h2>
+                        <div class="yellow-line-2"></div>
+                        <a href="#" class="details-button-1">More Details</a>
+                        <p id="details-div-paragraph">Google LLC is an American multinational technology company focusing on artificial
+                            intelligence, online advertising, search engine technology, cloud computing, computer
+                            software, quantum computing, e-commerce, and consumer electronics. (Wikipedia)</p>
+                        <a href="#" class="website-button">Visit Website</a>
+                        <div id="detail-div-img-div">
+                            <img id="detail-div-img" src="/images/genai/google_thumbnail.jpg" alt="Google Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <button class="close-button-1" onclick="closeDetails('details-div-6')">X</button>
+                </div>
+            </div>
+        </div>
+        <div id="details-div-7" class="details-div">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="/images/genai/ibm_large.jpg" alt="Wikipedia details on IBM" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="heading-2">IBM</h2>
+                        <div class="yellow-line-2"></div>
+                        <a href="#" class="details-button-1">More Details</a>
+                        <p id="details-div-paragraph">The International Business Machines Corporation, nicknamed Big Blue, is an American
+                            multinational technology corporation headquartered in Armonk, New York and is present in
+                            over 175 countries. (Wikipedia)</p>
+                        <a href="#" class="website-button">Visit Website</a>
+                        <div id="detail-div-img-div">
+                            <img id="detail-div-img" src="/images/genai/ibm_thumbnail.jpg" alt="IBM Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <button class="close-button-1" onclick="closeDetails('details-div-7')">X</button>
+                </div>
+            </div>
+        </div>
+        <div id="details-div-8" class="details-div">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="/images/genai/amazon_large.jpg" alt="Wikipedia details on Amazon" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="heading-2">AMAZON</h2>
+                        <div class="yellow-line-2"></div>
+                        <a href="#" class="details-button-1">More Details</a>
+                        <p id="details-div-paragraph">Amazon.com, Inc. is an American multinational technology company focusing on e-commerce,
+                            cloud computing, online advertising, digital streaming, and artificial intelligence.
+                            (Wikipedia)</p>
+                        <a href="#" class="website-button">Visit Website</a>
+                        <div id="detail-div-img-div">
+                            <img id="detail-div-img" src="/images/genai/amazon_thumbnail.jpg" alt="Amazon Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <button class="close-button-1" onclick="closeDetails('details-div-8')">X</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="genai-container" id="genai-container-3">
+	<h1 id="heading-1">GenAI Applications</h1>
+	<div class="grid-container" id="Tools-grid">
+          <div class="container-fluid">
+              <div class="row" style="margin:10px;">
+                <div class="col-md-3 col-sm-3">
+                    <div class="img-container">
+                        <img id="img-3" src="/images/genai/chatgpt_thumbnail.jpg" alt="ChatGPT Logo" class="img-fluid">
+                        <div class="img-overlay">
+                            <div class="img-title">CHATGPT</div>
+                            <div class="yellow-line-1"></div>
+                            <button class="details-button" onclick="toggleDetails('details-div-9')">MORE DETAILS</button>
+                            <div class="gray-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="img-container">
+                        <img id="img-4" src="/images/genai/githubcopilot_thumbnail.jpg" alt="Github Co-Pilot Logo" class="img-fluid">
+                        <div class="img-overlay">
+                            <div class="img-title">GITHUB CO-PILOT</div>
+                            <div class="yellow-line-1"></div>
+                            <button class="details-button" onclick="toggleDetails('details-div-10')">MORE DETAILS</button>
+                            <div class="gray-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="img-container">
+                        <img id="img-5" src="/images/genai/dalle_thumbnail.jpg" alt="Dall-E Logo" class="img-fluid">
+                        <div class="img-overlay">
+                            <div class="img-title">DALL-E</div>
+                            <div class="yellow-line-1"></div>
+                            <button class="details-button" onclick="toggleDetails('details-div-11')">MORE DETAILS</button>
+                            <div class="gray-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="img-container">
+                        <img id="img-6" src="/images/genai/synthesia_thumbnail.jpg" alt="Synthesia Logo" class="img-fluid">
+                        <div class="img-overlay">
+                            <div class="img-title">VIDEO: SYNTHESIA</div>
+                            <div class="yellow-line-1"></div>
+                            <button class="details-button" onclick="toggleDetails('details-div-12')">MORE DETAILS</button>
+                            <div class="gray-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="details-div-9" class="details-div">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="/images/genai/chatgpt_large.jpg" alt="Wikipedia details on ChatGPT" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="heading-2">CHATGPT</h2>
+                        <div class="yellow-line-2"></div>
+                        <a href="#" class="details-button-1">More Details</a>
+                        <p id="details-div-paragraph">ChatGPT is a large language model-based chatbot developed by OpenAI and launched on
+                            November 30, 2022, notable for enabling users to refine and steer a conversation towards
+                            a desired length, format, style, level of detail, and language used. (Wikipedia)</p>
+                        <a href="#" class="website-button">Visit Website</a>
+                        <div id="detail-div-img-div">
+                            <img id="detail-div-img" src="/images/genai/chatgpt_thumbnail.jpg" alt="ChatGPT Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <button class="close-button-2" onclick="closeDetails('details-div-9')">X</button>
+                </div>
+            </div>
+        </div>
+        <div id="details-div-10" class="details-div">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="/images/genai/githubcopilot_large.jpg" alt="Wikipedia details on Github Co-Pilot" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="heading-2">GITHUB CO-PILOT</h2>
+                        <div class="yellow-line-2"></div>
+                        <a href="#" class="details-button-1">More Details</a>
+                        <p id="details-div-paragraph">GitHub Copilot is a cloud-based artificial intelligence tool developed by GitHub and
+                            OpenAI to assist users of Visual Studio Code, Visual Studio, Neovim, and JetBrains
+                            integrated development environments by autocompleting code. (Wikipedia)</p>
+                        <a href="#" class="website-button">Visit Website</a>
+                        <div id="detail-div-img-div">
+                            <img id="detail-div-img" src="/images/genai/githubcopilot_thumbnail.jpg" alt="Github Co-Pilot Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <button class="close-button-2" onclick="closeDetails('details-div-10')">X</button>
+                </div>
+            </div>
+        </div>
+        <div id="details-div-11" class="details-div">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="/images/genai/dalle_large.jpg" alt="Wikipedia details on Dall-e" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="heading-2">DALL-E</h2>
+                        <div class="yellow-line-2"></div>
+                        <a href="#" class="details-button-1">More Details</a>
+                        <p id="details-div-paragraph">DALL-E and DALL-E 2 are text-to-image models developed by OpenAI using deep learning
+                            methodologies to generate digital images from natural language descriptions, called
+                            "prompts". DALL-E was revealed by OpenAI in a blog post in January 2021, and uses a
+                            version of GPT-3 modified to generate images. (Wikipedia)</p>
+                        <a href="#" class="website-button">Visit Website</a>
+                        <div id="detail-div-img-div">
+                            <img id="detail-div-img" src="/images/genai/dalle_thumbnail.jpg" alt="Dall-e Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <button class="close-button-2" onclick="closeDetails('details-div-11')">X</button>
+                </div>
+            </div>
+        </div>
+        <div id="details-div-12" class="details-div">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="/images/genai/synthesia_large.jpg" alt="Wikipedia details on Synthesia" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="heading-2">VIDEO: SYNTHESIA</h2>
+                        <div class="yellow-line-2"></div>
+                        <a href="#" class="details-button-1">More Details</a>
+                        <p id="details-div-paragraph">Synthesia is a synthetic media generation platform used to create AI generated video
+                            content. Based in London, England, it counts among its users businesses including
+                            Amazon, Tiffany & Co. and IHG Hotels & Resorts. (Wikipedia)</p>
+                        <a href="#" class="website-button">Visit Website</a>
+                        <div id="detail-div-img-div">
+                            <img id="detail-div-img" src="/images/genai/synthesia_thumbnail.jpg" alt="Synthesia Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <button class="close-button-2" onclick="closeDetails('details-div-12')">X</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

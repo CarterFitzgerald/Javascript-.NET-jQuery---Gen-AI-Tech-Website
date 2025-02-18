@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Final_Assignment_Carter_Fitzgerald.Models.GenAIs>
+
+@{
+    ViewData["Title"] = "Generative AT Websites";
+    var likesCount = ViewData["LikesCount"] as int?;
+}
+
+
+<div class="websites-container">
+    <h1 id="heading-1">Generative AI Websites</h1>
+    <p id="web-p">
+        <a id="web-p" asp-action="Create"><u>Click here to add new generative AI website</u></a>
+    </p>
+    @foreach (var item in Model.OrderByDescending(i => i.Likes))
+    {
+        <div id="@item.ImageFileName" class="item-container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="web-block-img">
+                        <img src="~/images/@(item.ImageFileName).jpg" class="web-img" alt="GenAI Image">
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-12">
+                <div class="web-block-text @(item.Id % 2 == 0 ? "blue-bg" : "orange-bg")">
+                    <h5 class="web-title">@item.GenAIName</h5>
+                    <p class="website-p">@item.Summary</p>
+                    <a id="like-btn" class="like-button btn btn-primary" data-id="@item.Id">Like @(likesCount ?? 0)</a>
+                    @{
+                        if(User.IsInRole("admin"))
+                        {
+                            <a href="@Url.Action("Edit", "GenAIs", new { id = item.Id })" class="btn btn-success">Edit</a>
+                        }
+                    }
+                    @{
+                        if(User.IsInRole("admin"))
+                        {
+                            <a href="@Url.Action("Delete", "GenAIs", new { id = item.Id })" class="btn btn-danger">Delete</a>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>    
+    }
+</div>
